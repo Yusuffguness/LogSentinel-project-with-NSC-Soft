@@ -1,0 +1,21 @@
+{
+  "_aciklama": "LogSentinel kural ayarlari. Esikleri kurumun trafigine gore ayarlayin.",
+  "whitelist": ["10.0.0.50"],
+  "_whitelist_aciklama": "10.0.0.50 kurum ici zafiyet tarayicisi; urettigi 404 trafigi saldiri sayilmaz.",
+  "ssh_bruteforce": {
+    "threshold": 5,
+    "window_seconds": 120
+  },
+  "ssh_user_enumeration": {
+    "distinct_users": 4,
+    "window_seconds": 600
+  },
+  "success_after_bruteforce": {
+    "min_failures": 5,
+    "window_seconds": 900
+  },
+  "web_directory_scan": {
+    "threshold": 15,
+    "window_seconds": 60
+  }
+}
